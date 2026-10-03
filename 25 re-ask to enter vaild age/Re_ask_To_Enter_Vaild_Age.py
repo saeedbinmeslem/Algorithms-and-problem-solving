@@ -1,8 +1,9 @@
-def VaildAge():
+def VaildAge(age):
     while True:    
-        age = int(input('How old are you? '))
         if age > 18 and age < 45:
             return "Vaild age"
+        else:
+            age = int(input('How old are you? '))
 
-
-print(VaildAge())
+age = int(input('How old are you? '))
+print(VaildAge(age))
